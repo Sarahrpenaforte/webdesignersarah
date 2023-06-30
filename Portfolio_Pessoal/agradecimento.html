@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agradecimento</title>
+</head>
+
+<body>
+    <h1> Obrigado pelo envio do formulário!! </h1>
+    <p id="dados"></p>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            // Função para decodificar os cookies
+            function decodeCookie(cookie) {
+                return decodeURIComponent(cookie.split('=')[1]);
+            }
+
+            // Obter os cookies gravados
+            var cookies = document.cookie.split(';');
+
+            // Variáveis para armazenar os valores dos cookies
+            var nome = '';
+            var email = '';
+            var mensagem = '';
+
+            // Iterar sobre os cookies e obter os valores desejados
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i].trim();
+                if (cookie.startsWith('nome=')) {
+                    nome = decodeCookie(cookie);
+                } else if (cookie.startsWith('email=')) {
+                    email = decodeCookie(cookie);
+                } else if (cookie.startsWith('mensagem=')) {
+                    mensagem = decodeCookie(cookie);
+                }
+            }
+
+            // Exibir os valores no parágrafo
+            var dadosParagrafo = document.getElementById('dados');
+            dadosParagrafo.textContent = 'Nome: ' + nome + ', Email: ' + email + ', Mensagem: ' + mensagem;
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+/*Estilos de navegação*/
+header {
+    color: white;
+    background-color: rgb(194, 137, 251);
+    text-align: center;
+}
+
+nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff0000;
+}
+/*Estilos gerais*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(238, 225, 251);
+    text-align: justify;
+}
+main{
+    padding: 20px;
+}
+section{
+    margin-bottom: 40px;
+    padding: 20px;
+}
+article{
+    margin-bottom: 20px;
+}
+article img{
+    border-radius: 10px;
+}
+footer{
+    background-color:  rgb(194, 137, 251);
+    color:#fff;
+    padding: 20px;
+    text-align: center;
+}
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Pessoal</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sarah Rodrigues Penaforte Francato</h1>
+        <h2>Bem-vindo ao meu Portfolio Pessoal</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="inicio">
+            <h2>Início</h2>
+            <p>Olá! Meu nome é Sarah Rodrigues Penaforte Francato e sou uma Web Designer em formação pelo SENAI de Botucatu.</p>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p> Tenho 27 anos, sou mãe de um menino de 5 anos e de um anjo.
+                Fiz 1 ano e meio de Análise e Desenvolvimento de Sisemas na Fatec de Botucatu.
+                Fui confeiteira e hoje sou consultora natura também.
+            </p>
+        </section>
+
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <article>
+                <h3>Projeto 1</h3>
+                <img src="Projeto1.jpg" alt="Projeto 1">
+                <p>Descrição do projeto 1</p>
+                <a href="ex2.html">Saiba mais</a>
+            </article>
+
+            <article>
+                <h3>Projeto 2</h3>
+                <img src="Projeto2.jpg" alt="Projeto 2">
+                <p>Descrição do projeto 2</p>
+                <a href="ex2.html">Saiba mais</a>
+            </article>
+
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form id="form-contato" onsubmit="return validar()" action="agradecimento.html">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="mensagem">Mensagem::</label>
+                <textarea id="mensagem" name="mensagem"></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        &copy;Sarah Rodrigues Penaforte Francato - Todos direitos reservados
+
+        <ul>
+            <li><a href="https://www.facebook.com/sarah.rodriguessp">Facebook</a></li>
+            <li><a href="https://instagram.com/sarah.mamaede2?igshid=MzNlNGNkZWQ4Mg==">Instagram</a></li>
+        </ul>    
+    </footer>
+    <script src="portfolio.js"></script>
+</body>
+
+</html>
